@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*
+{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    
+    scroll-behavior: smooth;
+}
+.contenedor-header
+{
+    background: #0d202b;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header
+{
+    max-width: 1100px;
+    margin:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a
+{
+    font-family: 'Righteous';
+    font-size: center;
+    color: #ad0137;
+    text-decoration: none;
+}
+.contenedor-header header ul
+{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a
+{
+    text-align: none;
+    color: #bf2a2a;
+    margin: 0 40px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover
+{
+    color:#1cb698
+}
+.contenedor-header .VideosJuegos
+{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans serif;
+    display: auto;
+}
+.nav-responsive
+{
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display:none;
+}
+/* I N I C I O*/
+.inicio
+{
+    background-image: linear-gradient(rgba(29, 100, 90, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/Diablo-IV.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner
+{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img
+{
+    margin-top: 40px;
+    border:10px solid #196077;
+    display: block;
+    width: 99%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1
+{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2
+{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a
+{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover
+{
+    background-color: #196077;
+}
+.personal
+{
+    background-color: #196077;
+    color: #fff;
+    padding: 50px 20px;
+
+}
+.personal .contenido-seccion
+{
+    max-width: 1100px;
+    margin: auto;
+}
+.personal h2
+{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.personal .contenido-seccion p 
+{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.personal .fila .col ul li strong
+{
+    display: inline-block;
+    color:#00d5ff;
+    width: 130px;
+}
+/*Reparar lo del boton personalizado*/
+/*Boton Personalizado*/
+.inicio .contenido-banner .botones
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inicio .contenido-banner .botones
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.inicio .contenido-banner .botones a
+{
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+.inicio .contenido-banner .botones a:hover
+{
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+.inicio .contenido-banner .botones a:before
+{
+    content:'';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+.inicio .contenido-banner .botones a span
+{
+    position:relative;
+    z-index: 1;
+}
+.inicio .contenido-banner .botones a i 
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.inicio .contenido-banner .botones a i:before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #1e2326;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+.inicio .contenido-banner .botones a:hover i:before
+{
+    width: 20px;
+    left: 20%;
+}
+.inicio .contenido-banner .botones a i:after
+{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: #000000;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+.inicio .contenido-banner .botones a:hover i:after
+{
+    width: 20px;
+    left: 80%;
+}
+
+
+/*Portafolios*/
+.portafolio
+{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portafolio .contenido-seccion
+{
+    max-width: 1100px;
+    margin:auto;
+}
+.portafolio h2
+{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portafolio .galeria
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portafolio .galeria .proyecto
+{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portafolio .galeria .proyecto img
+{
+    width: 100%;
+    display: block;
+}
+.portafolio .galeria .proyecto .overlay
+{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background:linear-gradient(rgba(12, 164, 230, 0.8),rgba(150, 187, 210, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portafolio .galeria .proyecto .overlay h3
+{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portafolio .galeria .proyecto .overlay:hover
+{
+    opacity: 1;
+}
+.portafolio .galeria .proyecto .overlay:hover h3
+{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
